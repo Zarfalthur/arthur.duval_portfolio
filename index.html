@@ -51,19 +51,19 @@
     }
 
     .sidebar .name {
-      font-size: 16px;
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
       font-weight: bold;
       opacity: 0.9;
     }
 
     .sidebar .city {
-      font-size: 14px;
+      font-size: clamp(0.8rem, 2vw, 1rem);
       opacity: 0.9;
       margin-top: 10px;
     }
 
     .sidebar .email {
-      font-size: 14px;
+      font-size: clamp(0.8rem, 2vw, 1rem);
       opacity: 0.9;
     }
 
@@ -173,14 +173,14 @@
        /* ===== Projet header ===== */
        .project-header {
        display: grid;           /* passer de grid à flex sur mobile */
-       grid-template-columns: 5fr 0fr 2fr 1fr; /* 4 colonnes égales */
+       grid-template-columns: 3fr 1fr 1.5fr 0.5fr; /* 4 colonnes égales */
        gap: 10px;
        padding: 3px 0;
        align-items: left;
       }
 
        .project-title {
-       font-size: 0.7rem;
+       font-size: clamp(0.9rem, 2.5vw, 1.2rem);
        white-space: nowrap;  /* empêche le titre de casser la ligne */
        overflow: hidden;
        text-overflow: ellipsis; /* ajoute "..." si trop long */
@@ -188,7 +188,7 @@
       }
 
        .project-meta {
-       font-size: 0.5rem;
+       font-size: clamp(0.7rem, 2vw, 0.9rem);
        opacity: 0.8;
        white-space: nowrap; /* idem pour mission, ville, date */
        overflow: hidden;

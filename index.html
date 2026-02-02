@@ -165,12 +165,39 @@
         margin-top: 0;
       }
 
-      .project-header {
-        grid-template-columns: 1fr;
+      #projets h2 {
+        font-size: clamp(1.3rem, 4vw, 2rem);
+        margin-bottom: 10px;
       }
 
-      .project-meta {
-        margin-top: 5px;
+       /* ===== Projet header ===== */
+       .project-header {
+       display: grid;           /* passer de grid à flex sur mobile */
+       grid-template-columns: 5fr 0fr 2fr 1fr; /* 4 colonnes égales */
+       gap: 10px;
+       padding: 3px 0;
+       align-items: left;
+      }
+
+       .project-title {
+       font-size: 0.7rem;
+       white-space: nowrap;  /* empêche le titre de casser la ligne */
+       overflow: hidden;
+       text-overflow: ellipsis; /* ajoute "..." si trop long */
+       margin-right: 15px;
+      }
+
+       .project-meta {
+       font-size: 0.5rem;
+       opacity: 0.8;
+       white-space: nowrap; /* idem pour mission, ville, date */
+       overflow: hidden;
+       text-overflow: ellipsis;
+       margin: 0;
+      }
+
+       .project-content img {
+       max-width: 100%; /* images s’adaptent à l’écran */
       }
     }
 
@@ -376,5 +403,3 @@ propice au foyer chaud.</p>
 
 </body>
 </html>
-
-
